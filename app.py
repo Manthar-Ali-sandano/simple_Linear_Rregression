@@ -9,7 +9,7 @@ def get_model_path():
     # Check if running on Streamlit Cloud
     if "STREAMLIT_CLOUD" in os.environ:
         # Path for Streamlit Cloud
-        return "01-salary-predictor/model.pkl"
+        return "../model.pkl"
     else:
         # Path for local environment
         return os.path.join(os.path.dirname(__file__), "model.pkl")
